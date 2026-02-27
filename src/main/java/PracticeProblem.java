@@ -4,24 +4,33 @@ public class PracticeProblem {
 
 	}
 
-	public static void q1() {
+	public static int sum2D(int[][] amogus) {
 		//Write question 1 code here
+		int count = 0; 
+		for (int i = 0; i < amogus.length; i++) {
+			for (int j = 0; j < amogus[i].length; j++) {
+				count += amogus[i][j];
+			}
+		}
+		return count;
 	}
 
-	public static void q2() {
+	public static int sumRow(int[][] amogus, int row) {
 		//Write question 2 code here
+		int count = 0;
+		for (int i = 0; i < amogus[row].length; i++) {
+			count += amogus[row][i];
+		}
+		return count;
 	}
 
-	public static void q3() {
+	public static int sumColumn(int[][] amogus, int col) {
 		//Write question 3 code here
-	}
-
-	public static void q4() {
-		//Write question 4 code here
-	}
-
-	public static void q5() {
-		//Write question 5 code here
+		int count = 0;
+		for (int i = 0; i < amogus.length; i++) {
+			count += amogus[i][col];
+		}
+		return count;
 	}
 
 }
